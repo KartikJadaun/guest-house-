@@ -1,0 +1,101 @@
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e4e4e4;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .footer_wrapper {
+    background-color: #333;
+}
+
+body.dark-mode .main-btn {
+    color: #e4e4e4;
+    border-color: #e4e4e4;
+}
+
+body.dark-mode .back-to-top,
+body.dark-mode .dark-mode-toggle {
+    background-color: #444;
+    color: #e4e4e4;
+}
+#faq-section {
+    max-width: 600px;
+    margin: auto;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #ddd;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
